@@ -19,54 +19,60 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <main class="card">
-      <div class="card__content">
-        <div class="wrapper">
+    <main
+      class="card flex flex-direction-column flex-wrap gap-md card-padding card-border-radius card-background-color"
+    >
+      <div
+        class="card__content flex flex-direction-column flex-wrap gap-md card-content-border-bottom padding-bottom-md"
+      >
+        <div class="wrapper margin-bottom-sm">
           <a class="card__link" href="#">
             <div class="image-overlay"></div>
             <span hidden>Equilibrium</span>
             <img
-              class="card__image"
+              class="card__image card-image-border-radius"
               src="images/image-equilibrium.jpg"
               alt="Equilibrium"
             />
           </a>
         </div>
 
-        <h1 class="card__title">
+        <h1 class="card__title bold">
           <a class="card__link" href="#">Equilibrium #3429</a>
         </h1>
-        <p class="card__description">
+        <p class="card__description font-weight-300">
           Our Equilibrium collection promotes balance and calm.
         </p>
-        <div class="card__values">
-          <div class="card__value">
+        <div
+          class="card__values full-width flex justify-content-space-between align-items-center"
+        >
+          <div class="card__value flex gap-sm">
             <img
               src="images/icon-ethereum.svg"
               alt="Ethereum"
-              class="card__value-icon"
+              class="value__icon"
             />
-            <p class="card__value-label">0.041 ETH</p>
+            <p class="value__label label-font color-primary bold">0.041 ETH</p>
           </div>
-          <div class="card__time-remaining">
+          <div class="card__time-remaining flex gap-sm">
             <img
               src="images/icon-clock.svg"
               alt="Time"
-              class="card__time-remaining-icon"
+              class="time-remaining__icon"
             />
-            <p class="card__time-remaining-label">3 days left</p>
+            <p class="time-remaining__label label-font">3 days left</p>
           </div>
         </div>
       </div>
-      <div class="card__footer">
+      <div class="card__footer flex align-items-center gap-md font-weight-300">
         <img
-          class="card__avatar"
+          class="card__avatar round-border border-white"
           src="images/image-avatar.png"
           alt="Jules Wyvern"
         />
-        <p class="card__footer-title">
+        <p>
           Creation of
-          <span class="card__avatar-name">
+          <span class="avatar__name color-white">
             <a class="card__link" href="#">Jules Wyvern</a>
           </span>
         </p>
